@@ -16,13 +16,14 @@ public class User implements Serializable {
 	private int age;
 	private int balance;
 	private String trans;
+	private int accountNum;
 
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(String username, String password, String firstName, String lastName, int age, int balance, String trans) {
+	public User(String username, String password, String firstName, String lastName, int age, int balance, String trans,int accountNum) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -31,6 +32,7 @@ public class User implements Serializable {
 		this.age = age;
 		this.balance=balance;
 		this.trans=trans;
+		this.accountNum=accountNum;
 	}
 
 	public String getTrans() {
@@ -130,7 +132,7 @@ public class User implements Serializable {
 	@Override
 	public String toString() {
 		return "User [username=" + username + ", password=" + password + ", firstName=" + firstName + ", lastName="
-				+ lastName + ", age=" + age +", balance="+balance+ "]";
+				+ lastName + ", age=" + age +", balance="+balance+ "accountNum="+accountNum+"]";
 	}
 
 	public int getBalance() {
@@ -139,6 +141,14 @@ public class User implements Serializable {
 
 	public void setBalance(int balance) {
 		this.balance = this.balance+balance;
+	}
+
+	public int getAccountNum() {
+		return accountNum;
+	}
+
+	public void setAccountNum(int accountNum) {
+		this.accountNum = accountNum;
 	}
 
 }

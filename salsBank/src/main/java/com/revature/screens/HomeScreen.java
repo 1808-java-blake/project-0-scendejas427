@@ -15,59 +15,8 @@ public class HomeScreen implements Screen {
 
 		Diamonds here=new Diamonds();
 		TitleBox t=new TitleBox();
-		t.makeTitle("Welcome to Sals Bank!to login to existing account!to create a new account!to logout");
-//		Diamonds here=new Diamonds();
-//		here.make(0,68);
-//		
-//		//screen
-//		String wait="        ";
-//		String wait1="ooooooo";
-//		wait=wait+" ";
-//		wait1=wait1.replaceFirst("o", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait +"____________________________________________________________"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait=wait+" ";
-//		wait1=wait1.replaceFirst("o", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait +"|_|______________________________________________________|_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait=wait+" ";
-//		wait1=wait1.replaceFirst("o", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|                      Welcome to Sals bank            |_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait=wait+" ";
-//		wait1=wait1.replaceFirst("o", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|______________________________________________________|_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait=wait+" ";
-//		wait1=wait1.replaceFirst("o", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|Enter 1|            to login into an existing account |_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait=wait+" ";
-//		wait1=wait1.replaceFirst("o", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|_______|______________________________________________|_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//	
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|Enter 2|                to create a new account       |_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//			wait=wait+" ";
-//		wait1=wait1.replaceFirst("o", "");
-//		wait1=wait1+"o";
-//		wait=wait.replaceFirst(" ", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|_______|______________________________________________|_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait1=wait1+"o";
-//		wait=wait.replaceFirst(" ", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|Enter 3|              to contact a custumer service   |_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait1=wait1+"o";
-//		wait=wait.replaceFirst(" ", "");
-//		
-//		System.out.println(wait+wait1+wait1+wait+wait+wait1+wait1+wait+"|_|_______|______________________________________________|_|"+wait+wait1+wait1+wait+wait+wait1+wait1+wait+wait+wait1);
-//		wait1=wait1+"o";
-//		wait=wait.replaceFirst(" ", "");
-//		
-//		//under screen
-//		here.make(78, 90);
+		t.makeTitle("Welcome to Sals Bank!to login to existing account!to create a new account!to Contact customer service");
+
 		
 		//waiting for command
 		String selection = scan.nextLine();

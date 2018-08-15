@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Scanner;
 
 import com.revature.beans.User;
+import com.revature.current.CurrentUser;
 import com.revature.daos.UserDao;
 
 public class CreationScreen implements Screen {
@@ -13,7 +14,6 @@ public class CreationScreen implements Screen {
 
 	
 	public Screen start() {
-		
 		User u = new User();
 		System.out.println("Enter new username");
 		String username=scan.nextLine();
@@ -33,12 +33,15 @@ public class CreationScreen implements Screen {
 		String age = scan.nextLine();
 		u.setTrans("New account created on " +LocalDateTime.now().toLocalDate()+" at "+LocalDateTime.now().toLocalTime());
 		u.setBalance(0);
+		ud.updateNum(ud.getNum()+1);
+		u.setAccountNum(ud.getNum());
 		try {
 			u.setAge(Integer.valueOf(age));
 			ud.createUser(u);
 			
 		} catch (NumberFormatException e) {
 			System.out.println("Invalid number");
+			return new HomeScreen();
 		}
 		
 		

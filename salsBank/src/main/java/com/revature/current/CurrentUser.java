@@ -14,6 +14,7 @@ public class CurrentUser {
 	public User getCurrent() {
 		return CurrentUser.current;
 	}
+
 	
 
 }

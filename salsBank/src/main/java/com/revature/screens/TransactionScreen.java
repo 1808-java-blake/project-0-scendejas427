@@ -9,6 +9,7 @@ public class TransactionScreen implements Screen {
 	private Scanner scan = new Scanner(System.in);
 	CurrentUser q=new CurrentUser();
 	User u=q.getCurrent();
+	TitleBox t=new TitleBox();
 	@Override
 	public Screen start() {
 		for(String each:u.getTrans().split("!")) {
