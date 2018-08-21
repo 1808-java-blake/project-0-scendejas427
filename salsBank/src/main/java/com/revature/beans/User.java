@@ -2,13 +2,9 @@ package com.revature.beans;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public class User {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 2878891003003024330L;
-	
+
 	private String username;
 	private String password;
 	private String firstName;

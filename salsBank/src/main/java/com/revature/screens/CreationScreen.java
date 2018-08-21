@@ -33,8 +33,7 @@ public class CreationScreen implements Screen {
 		String age = scan.nextLine();
 		u.setTrans("New account created on " +LocalDateTime.now().toLocalDate()+" at "+LocalDateTime.now().toLocalTime());
 		u.setBalance(0);
-		ud.updateNum(ud.getNum()+1);
-		u.setAccountNum(ud.getNum());
+
 		try {
 			u.setAge(Integer.valueOf(age));
 			ud.createUser(u);

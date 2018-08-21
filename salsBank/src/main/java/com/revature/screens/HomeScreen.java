@@ -15,7 +15,7 @@ public class HomeScreen implements Screen {
 
 		Diamonds here=new Diamonds();
 		TitleBox t=new TitleBox();
-		t.makeTitle("Welcome to Sals Bank!to login to existing account!to create a new account!to Contact customer service");
+		t.makeTitle("Welcome to Sals Bank!to login to existing account!to create a new account!to Contact customer service ");
 
 		
 		//waiting for command
